@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テストページ</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>スマホヘッダー確認</title>
+<style>
+body{
+  margin:0;
+  font-family:sans-serif;
+}
+
+/* スマホ風コンテナ */
+.phone{
+  max-width:390px;
+  margin:auto;
+  border:1px solid #ccc;
+}
+
+/* ヘッダー */
+.header150{
+  background:red;
+  height:150px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-size:24px;
+}
+
+/* 比較用 */
+.header70{
+  background:red;
+  height:70px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-size:20px;
+}
+
+.content{
+  padding:20px;
+  line-height:1.6;
+}
+.label{
+  padding:10px;
+  background:#f2f2f2;
+  font-size:14px;
+}
+</style>
 </head>
 <body>
-  <h1>公開成功aaa</h1>
+
+<div class="phone">
+
+  <div class="label">高さ150px</div>
+  <div class="header150">LOGO</div>
+  <div class="content">
+    ここから本文が始まります。<br>
+    スクロール前の占有率をチェック。
+  </div>
+
+  <div class="label">高さ70px（比較）</div>
+  <div class="header70">LOGO</div>
+  <div class="content">
+    こちらはコンパクト版。
+  </div>
+
+</div>
+
 </body>
 </html>
